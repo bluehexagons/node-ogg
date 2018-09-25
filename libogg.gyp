@@ -51,8 +51,8 @@
       'product_prefix': '',
       'type': 'static_library',
       'sources': [
-        'src/framing.c',
-        'src/bitwise.c',
+        'libogg/src/framing.c',
+        'libogg/src/bitwise.c',
       ],
       'defines': [
         'PIC',
@@ -60,14 +60,14 @@
       ],
       'include_dirs': [
         # platform and arch-specific headers
-        'config/<(OS)/<(target_arch)',
-        'include',
+        'libogg/config/<(OS)/<(target_arch)',
+        'libogg/include',
       ],
       'direct_dependent_settings': {
         'include_dirs': [
           # platform and arch-specific headers
-          'config/<(OS)/<(target_arch)',
-          'include',
+          'libogg/config/<(OS)/<(target_arch)',
+          'libogg/include',
         ],
       },
     },
@@ -76,7 +76,7 @@
       'target_name': 'test',
       'type': 'executable',
       'dependencies': [ 'libogg' ],
-      'sources': [ 'test.c' ]
+      'sources': [ 'libogg/test.c' ]
     },
   ]
 }

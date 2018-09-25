@@ -10,7 +10,7 @@
         'src/binding.cc',
       ],
       'dependencies': [
-        'deps/libogg/libogg.gyp:libogg',
+        'libogg.gyp:libogg',
       ],
       'conditions': [
         ['OS=="mac"', {
@@ -31,7 +31,7 @@
           # libogg symbols get re-exported
           'msvs_settings': {
             'VCLinkerTool': {
-              'ModuleDefinitionFile': '<(module_root_dir)\\deps\\libogg\\win32\\ogg.def',
+              'ModuleDefinitionFile': '<(module_root_dir)\\libogg\\win32\\ogg.def',
             },
           },
         }],
