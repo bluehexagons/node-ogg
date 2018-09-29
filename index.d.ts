@@ -9,4 +9,4 @@ declare namespace Ogg {
   export const Encoder: OggEncoder
 }
 
-export default Ogg
+export = Ogg
