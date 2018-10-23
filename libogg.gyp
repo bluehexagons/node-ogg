@@ -56,7 +56,6 @@
       ],
       'defines': [
         'PIC',
-        'HAVE_CONFIG_H',
       ],
       'include_dirs': [
         # platform and arch-specific headers
