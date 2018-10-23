@@ -27,6 +27,8 @@
     "ogg-packet": "1"
   },
   "scripts": {
+    "install": "cmake ./libogg && node-gyp rebuild",
+    "configure": "cmake ./libogg",
     "test": "mocha --reporter spec"
   }
 }
