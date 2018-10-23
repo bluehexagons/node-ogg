@@ -56,17 +56,20 @@
       ],
       'defines': [
         'PIC',
+        'HAVE_CONFIG_H',
       ],
       'include_dirs': [
         # platform and arch-specific headers
         'libogg/config/<(OS)/<(target_arch)',
         'libogg/include',
+        'include',
       ],
       'direct_dependent_settings': {
         'include_dirs': [
           # platform and arch-specific headers
           'libogg/config/<(OS)/<(target_arch)',
           'libogg/include',
+          'include',
         ],
       },
     },
